@@ -1,0 +1,3 @@
+﻿VSColorOutput
+
+https://marketplace.visualstudio.com/

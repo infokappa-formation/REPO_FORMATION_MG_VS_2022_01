@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Author>Infokappa</Author>
+			<Description>Snippet test de la fonction ClassName</Description>
+			<Shortcut>ik_classname</Shortcut>
+			<Title>Infokappa ClassName</Title>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal Editable="false">
+					<ID>className</ID>
+					<ToolTip>Nom de la classe</ToolTip>
+					<Function>ClassName()</Function>
+					<Default>ClassNamePlaceholder</Default>
+				</Literal>
+				<Literal>
+					<ID>myProperty</ID>
+					<ToolTip>Custom property</ToolTip>
+					<Default>MyProperty</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp">
+				<![CDATA[/// <summary>
+			/// Propriété "$myProperty$" pour la classe "$className$"
+			/// </summary>
+			public string $myProperty$ { get; set; }		
+			
+			$end$]]>		
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

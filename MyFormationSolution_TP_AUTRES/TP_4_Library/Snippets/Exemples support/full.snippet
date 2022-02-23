@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Author>Infokappa</Author>
+			<Description>Snippet complet de test</Description>
+			<HelpUrl>http://www.google/com</HelpUrl>
+			<Keywords>
+				<Keyword>Full</Keyword>
+				<Keyword>Snippet</Keyword>
+				<Keyword>Amazing</Keyword>
+			</Keywords>
+			<Shortcut>my_shortcut</Shortcut>
+			<Title>full_snippet</Title>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<References>
+				<Reference>
+					<Assembly>System.dll</Assembly>
+				</Reference>
+			</References>
+			<Imports>
+				<Import>
+				   <Namespace>System.Diagnostics</Namespace>
+				</Import>
+				<Import>
+					<Namespace>System.Reflection</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>				
+				<Literal Editable="true">
+					<Default>MyDefaultValue</Default>
+					<ID>myLiteral</ID>
+					<ToolTip>My custom literal</ToolTip>
+				</Literal>				
+				<Literal Editable="false">
+					<ID>classname</ID>
+					<ToolTip>Nom de la classe</ToolTip>
+					<Function>ClassName()</Function>
+					<Default>ClassNamePlaceholder</Default>
+				</Literal>
+				<Object>
+					<ID>myReader</ID>
+					<Default>reader</Default>
+					<Type></Type>
+				</Object>
+				<Literal>
+					<ID>myVisibility</ID>
+					<ToolTip>Custom visibility</ToolTip>
+					<Default>public</Default>
+				</Literal>			
+				<Literal>
+					<ID>myType</ID>
+					<ToolTip>Custom type</ToolTip>
+					<Default>string</Default>
+				</Literal>		
+				<Literal>
+					<ID>myName</ID>
+					<ToolTip>Custom name</ToolTip>
+					<Default>Toto</Default>
+				</Literal>				
+                <Literal Editable="false">
+                    <ID>SystemConsole</ID>
+                    <Function>SimpleTypeName(global::System.Console)</Function>
+					<Default>dshl</Default>
+                </Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[/// <summary>
+			/// Propriété "$myName$" pour la classe "$classname$"
+			/// </summary>
+			$myVisibility$ $myType$ $myName$ { get; set; }
+				
+			/// <summary>
+			/// Méthode de débogage de l'objet
+			/// </summary>
+			public void Debug$myName$() {
+				$SystemConsole$.WriteLine($myName$);
+			}		
+			
+			$end$]]>		
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

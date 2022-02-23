@@ -1,0 +1,8 @@
+﻿Nom du serveur
+51.178.63.5\FORMATION_VS
+
+Nom d'utilisateur
+ikuser
+
+Mot de passe
+Formation_VS2019
